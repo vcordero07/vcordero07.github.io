@@ -1,4 +1,33 @@
-#test-div {
-  font-family: Sans-Serif;
-  color: green;
+body {
+  background-color: #2E2F33;
+  padding: 20px;
+  color: white;
+}
+
+#search-form,
+.form-control {
+  margin-bottom: 20px;
+}
+
+.cover {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.cover:hover {
+  cursor: pointer;
+}
+
+.cover.playing {
+  border: 5px solid #e45343;
+}
+
+.btn-search {
+  background-color: #29A84F;
+}
+
+.btn-search:hover {
+  background-color: #2EBD59;
 }

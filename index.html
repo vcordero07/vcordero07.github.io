@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Playlistify</title>
-    <link rel="stylesheet" href="css/listify.css"
+    <link rel="stylesheet" href="listify.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   </head>
-  <body>
-      <div id="test-Div" >Test div</div>
-      <script src="js/listify.js" charset="utf-8"></script>
-  </body>
+
+    <body>
+        <div class="container">
+            <h1>La Fiesta Loca Party!</h1>
+            <div>
+                <label id="checkYest">RSVP: <input type="checkbox" name="Yes" onchange="doAlert('yes')"> Yes!</label>
+                <label id="checkNot">RSVP: <input type="checkbox" name="No" onchange="doAlert('no')"> No :/</label>
+            </div>
+
+            <div id="searchbarform" style="display: none;">
+                <h3>Now add some songs to our Playlist:</h3>
+                <p>Type an artist name, and we will add the top songs to our Playlist.</p>
+                <form id="search-form">
+
+                    <input type="text" id="query" value="A new value" class="form-control" placeholder="Type an Artist Name" />
+                    <input type="submit" id="search" class="btn btn-primary btn-search" value="Search" />
+                </form>
+                <div id="results"></div>
+            </div>
+        </div>
+        <script src="listify.js" charset="utf-8"></script>
+    </body>
+
 </html>
